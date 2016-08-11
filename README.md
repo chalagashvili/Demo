@@ -1,1 +1,1 @@
-# Code Projects of Mine
+# Snippet codes from various projects
