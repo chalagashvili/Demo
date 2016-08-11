@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:gravity="center_horizontal"
+        android:text="@string/record_share"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="@dimen/welcoming_size" />
+
+
+    <LinearLayout
+        android:id="@+id/main_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/thirty"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/record_button"
+            android:layout_width="@dimen/custom_tab_layout_height"
+            android:layout_height="@dimen/custom_tab_layout_height"
+            android:layout_marginStart="@dimen/zero"
+            android:contentDescription="@string/micro"
+            android:src="@mipmap/ic_mic_black_24dp" />
+
+        <ImageView
+            android:id="@+id/stop_button"
+            android:layout_width="@dimen/custom_tab_layout_height"
+            android:layout_height="@dimen/custom_tab_layout_height"
+            android:layout_marginStart="@dimen/tw_five"
+            android:contentDescription="@string/save"
+            android:src="@mipmap/ic_stop_black_24dp" />
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="@dimen/custom_tab_layout_height"
+            android:layout_height="@dimen/custom_tab_layout_height"
+            android:layout_marginStart="@dimen/tw_five"
+            android:contentDescription="@string/save"
+            android:src="@mipmap/ic_play_circle_filled_black_24dp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/upload_button"
+        android:layout_width="@dimen/custom_tab_layout_height"
+        android:layout_height="@dimen/custom_tab_layout_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/tw_five"
+        android:contentDescription="@string/uploading"
+        android:src="@mipmap/ic_backup_black_24dp" />
+
+    <ProgressBar
+        android:id="@+id/upload_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/tw_five"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/upload_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/twenty"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/upload_complete_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_left"
+            android:text="@string/upload_complete"
+            android:textColor="@color/indigo"
+            android:textSize="@dimen/para_name_size" />
+
+
+        <ImageView
+            android:id="@+id/complete_tick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding"
+            android:layout_marginStart="@dimen/end_marg"
+            android:contentDescription="@string/upload_complete"
+            android:src="@mipmap/ic_check_circle_black_24dp" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/sharer"
+        android:layout_width="@dimen/circle_radius"
+        android:layout_height="@dimen/circle_radius"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/tw_five"
+        android:contentDescription="@string/record_share"
+        android:src="@drawable/sharer"
+        android:visibility="gone"/>
+
+
+</LinearLayout>
